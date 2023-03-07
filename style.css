@@ -1,3 +1,20 @@
+@font-face {
+    font-family: Anton;
+    src: url(fonts/Anton-Regular.ttf);
+}
+@font-face {
+    font-family: FivoOblique;
+    src: url(fonts/fivo-sans.oblique.otf);
+}
+@font-face {
+    font-family: Fivo;
+    src: url(fonts/fivo-sans.regular.otf);
+}
+@font-face {
+    font-family: FivoBold;
+    src: url(fonts/fivo-sans.bold.otf);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +22,16 @@ body {
     background-color: rgb(15, 15, 15);
     color: white;
     margin: 0;
-    box-shad;
+}
+
+h2 {
+    font-family: Anton;
+    font-size: 4em;
+}
+
+h3 {
+    font-family: FivoOblique;
+    font-size: 3em;
 }
 
 .container {
