@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+.container {
+   background-image: url(images/homeapge.jpg);
+   background-size: cover;
+   height: 100vh;
+
+}
