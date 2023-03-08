@@ -24,14 +24,56 @@ body {
     margin: 0;
 }
 
-h2 {
-    font-family: Anton;
-    font-size: 4em;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin: auto 50px;
+    
 }
 
-h3 {
-    font-family: FivoOblique;
+.date, .location {
+    font-family: Anton;
     font-size: 3em;
+}
+
+.date {
+
+    display: inline-block;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+
+.location {
+    
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    
+    
+}
+.artists, .stages {
+    font-family: FivoOblique;
+    font-size: 1em;
+}
+
+.artists {
+    grid-column: 1/2;
+    grid-row: 3/4;     
+}
+.stages {
+
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.festival {
+    background-color: yellow; 
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 .container {
@@ -41,7 +83,9 @@ h3 {
 
 }
 
-.cccc {
+
+
+.burgerBtn {
     display: inline-block;
     cursor: pointer;
     border: 2px solid #fcfcfc;
