@@ -245,3 +245,29 @@ a {
     justify-content: center;
     margin: 30px auto;
 }
+
+.grid-lineup {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin: 100px auto;
+}
+
+.artist {
+    font-size: 4em;
+    color: rgb(230, 97, 143);
+}
+
+
+.artist, .date-big {
+    font-family: Anton;
+}
+
+.date-big {
+    font-size: 7em;
+}
+
+.day-one, .day-two, .day-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
