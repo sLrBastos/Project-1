@@ -94,9 +94,9 @@ body {
 .burgerBtn {
     width: 65px;
     height: 60px;
-    position: fixed;
+    position: absolute;
     cursor: pointer;
-    bottom: 300px;
+    bottom: 200px;
     border: 8px solid white;
     border-radius: 50%;
     padding: 10px;
