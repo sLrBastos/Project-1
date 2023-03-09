@@ -26,11 +26,11 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, 300px);
     gap: 20px;
-    margin: auto 50px;
-    
+    margin: auto 80px;
+
 }
 
 .date, .location {
@@ -57,7 +57,7 @@ body {
 }
 .artists, .stages {
     font-family: FivoOblique;
-    font-size: 1em;
+    font-size: 3em;
 }
 
 .artists {
@@ -65,36 +65,44 @@ body {
     grid-row: 3/4;     
 }
 .stages {
-
+    display: flex;
+    justify-content: center;
     grid-column: 3/4;
     grid-row: 3/4;
 }
 
-.festival {
-    background-color: yellow; 
+.festival { 
+    
     grid-column: 2/3;
     grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.festival-name {
+    font-size: 5em;
 }
 
 .container {
    background-image: url(images/homeapge.jpg);
    background-size: cover;
-   height: 100vh;
-
 }
 
 
 
 .burgerBtn {
-    display: inline-block;
     cursor: pointer;
-    border: 2px solid #fcfcfc;
+    border: 2px solid white;
     border-radius: 50%;
-    padding: 10px;
+    margin-top: -50px;
+    padding: 15px;
     
   }
   
   .bar1, .bar2, .bar3 {
+    
     width: 35px;
     height: 5px;
     background-color: #fcfcfc;
