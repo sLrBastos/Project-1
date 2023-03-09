@@ -77,8 +77,8 @@ a {
     grid-template-rows: repeat(3, 300px);
     gap: 20px;
     margin: auto 80px;
-
 }
+
 
 .date, .location {
     font-family: Anton;
@@ -170,4 +170,78 @@ a {
   
 .change .bar3 {
     transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+.ticket-burger {
+  bottom: 850px;
+  right: 30px;  
+  color: rgb(230, 97, 143);  
+  border-color: rgb(230, 97, 143);
+}
+
+.ticket-bar {
+    background-color: rgb(230, 97, 143);   
+}
+
+.grid-ticket {
+    border: 3px solid rgb(228, 206, 206);
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, 200px);
+    margin: 100px 100px;
+}
+
+.three-day, .two-day, .one-day, .vip {
+    border: 3px solid rgb(228, 206, 206);
+}
+
+.two-day {
+    grid-row: 2/3;
+}
+
+.nine {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.vip {
+    grid-column: 1/2;
+    grid-row: 3/4;  
+}
+
+.pass {
+    font-size: 3em;
+}
+
+.ticket-btn {
+    border: 4px solid rgb(230, 97, 143);
+    border-radius: 75px;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: rgb(230, 97, 143);
+    font-family: Anton;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.day {
+  font-size: 2em;  
+}
+
+.one-day, .vip, .two-day, .three-day {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.ticket {
+    font-size: 4em;
+}
+
+.title-ticket {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
 }
